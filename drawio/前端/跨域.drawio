@@ -1,0 +1,283 @@
+<mxfile host="Electron" modified="2024-05-08T17:31:40.169Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="7ad-19RaKrKSmUX0G9yf" version="24.2.5" type="device">
+  <diagram name="第 1 页" id="kkBCthrerJSmqeJDVxMR">
+    <mxGraphModel dx="1434" dy="845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-5" value="&lt;h1 style=&quot;margin-top: 0px; font-size: 22px;&quot;&gt;浏览器的同源策略&lt;/h1&gt;&lt;p style=&quot;&quot;&gt;1、浏览器出于安全考虑，对 &lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;同源请求&lt;/font&gt;&lt;/b&gt; 放行，对 &lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;异源请求 限制&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;2、这些限制规则统称为同源策略，&lt;span style=&quot;background-color: initial;&quot;&gt;因此限制造成的开发问题，称之为 &lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;跨域（异源）问题&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3、跨越问题跟浏览器相关，脱离了浏览器范围不存在跨域问题&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="222" y="20" width="346" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-40" value="Assets" style="childLayout=tableLayout;recursiveResize=0;strokeColor=#98bf21;fillColor=#A7C942;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="116.7" y="290" width="550" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-41" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;strokeColor=inherit;fillColor=#ffffff;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-40">
+          <mxGeometry width="550" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-42" value="&lt;pre&gt;&lt;font color=&quot;#000000&quot; style=&quot;font-size: 16px;&quot;&gt;源1&lt;/font&gt;&lt;/pre&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#A7C942;align=center;fontStyle=1;fontColor=#FFFFFF;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-41">
+          <mxGeometry width="210" height="50" as="geometry">
+            <mxRectangle width="210" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-43" value="&lt;pre style=&quot;&quot;&gt;&lt;font color=&quot;#000000&quot; style=&quot;font-size: 16px;&quot;&gt;源2&lt;/font&gt;&lt;/pre&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#A7C942;align=center;fontStyle=1;fontColor=#FFFFFF;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-41">
+          <mxGeometry x="210" width="210" height="50" as="geometry">
+            <mxRectangle width="210" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-44" value="&lt;pre&gt;&lt;font color=&quot;#000000&quot; style=&quot;font-size: 16px;&quot;&gt;是否同源&lt;/font&gt;&lt;/pre&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#A7C942;align=center;fontStyle=1;fontColor=#FFFFFF;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-41">
+          <mxGeometry x="420" width="130" height="50" as="geometry">
+            <mxRectangle width="130" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-45" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;strokeColor=inherit;fillColor=#ffffff;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-40">
+          <mxGeometry y="50" width="550" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-46" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;http&lt;/font&gt;://a.com:81/a&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-45">
+          <mxGeometry width="210" height="40" as="geometry">
+            <mxRectangle width="210" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-47" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;https&lt;/font&gt;://a.com:81/a&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-45">
+          <mxGeometry x="210" width="210" height="40" as="geometry">
+            <mxRectangle width="210" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-48" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;否&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-45">
+          <mxGeometry x="420" width="130" height="40" as="geometry">
+            <mxRectangle width="130" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-49" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-40">
+          <mxGeometry y="90" width="550" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-50" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;http://&lt;font color=&quot;#ff3333&quot;&gt;a.com&lt;/font&gt;:81/a&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-49">
+          <mxGeometry width="210" height="31" as="geometry">
+            <mxRectangle width="210" height="31" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-51" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;http://&lt;font color=&quot;#ff3333&quot;&gt;www.a.com&lt;/font&gt;:81/a&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-49">
+          <mxGeometry x="210" width="210" height="31" as="geometry">
+            <mxRectangle width="210" height="31" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-52" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;否&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-49">
+          <mxGeometry x="420" width="130" height="31" as="geometry">
+            <mxRectangle width="130" height="31" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-53" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;strokeColor=inherit;fillColor=#ffffff;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-40">
+          <mxGeometry y="121" width="550" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-54" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;http://a.com:&lt;font color=&quot;#ff3333&quot;&gt;81&lt;/font&gt;/a&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;fontStyle=0;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-53">
+          <mxGeometry width="210" height="33" as="geometry">
+            <mxRectangle width="210" height="33" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-55" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;http://a.com:&lt;font color=&quot;#ff3333&quot;&gt;82&lt;/font&gt;/a&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;fontStyle=0;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-53">
+          <mxGeometry x="210" width="210" height="33" as="geometry">
+            <mxRectangle width="210" height="33" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-56" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;否&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;fontStyle=0;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-53">
+          <mxGeometry x="420" width="130" height="33" as="geometry">
+            <mxRectangle width="130" height="33" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-57" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-40">
+          <mxGeometry y="154" width="550" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-58" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;http://a.com:81&lt;font color=&quot;#ff3333&quot;&gt;/a&lt;/font&gt;&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-57">
+          <mxGeometry width="210" height="31" as="geometry">
+            <mxRectangle width="210" height="31" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-59" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;http://a.com:81&lt;font color=&quot;#ff3333&quot;&gt;/a/b&lt;/font&gt;&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-57">
+          <mxGeometry x="210" width="210" height="31" as="geometry">
+            <mxRectangle width="210" height="31" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-60" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;是&lt;/font&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="ji_XoPqnHpa4-nrGWLav-57">
+          <mxGeometry x="420" width="130" height="31" as="geometry">
+            <mxRectangle width="130" height="31" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FF3333;" edge="1" parent="1" source="ji_XoPqnHpa4-nrGWLav-67" target="ji_XoPqnHpa4-nrGWLav-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-75" value="&amp;lt;img /&amp;gt;&lt;div&gt;异源（跨域）&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ji_XoPqnHpa4-nrGWLav-72">
+          <mxGeometry x="0.0375" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FF3333;" edge="1" parent="1" source="ji_XoPqnHpa4-nrGWLav-67" target="ji_XoPqnHpa4-nrGWLav-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-76" value="AJAX&lt;div&gt;异源（跨域）&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ji_XoPqnHpa4-nrGWLav-73">
+          <mxGeometry x="-0.1571" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#33FF33;" edge="1" parent="1" source="ji_XoPqnHpa4-nrGWLav-67" target="ji_XoPqnHpa4-nrGWLav-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-77" value="AJAX&lt;div&gt;同源&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ji_XoPqnHpa4-nrGWLav-74">
+          <mxGeometry x="-0.2235" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-67" value="&lt;div style=&quot;text-align: justify; font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;页面源&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;http://a.com/list&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;horizontal=1;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="120" y="610" width="180" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-68" value="&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 20px;&quot;&gt;何为同源请求？&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="250" y="545" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-69" value="目标源&lt;div&gt;https://a.com/list&lt;/div&gt;&lt;div&gt;图片、CSS&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="440" y="620" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-70" value="目标源&lt;div&gt;https://api.b.com/list&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="440" y="720" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-71" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;/blockquote&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;目标源&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;https://a.com/api/courses&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="440" y="870" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-81" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;浏览器如何限制&lt;/h1&gt;&lt;p&gt;1、对标签发出的跨域请求轻限制（开发感受不到），如：link、script、img、video等标签&lt;/p&gt;&lt;p&gt;2、&lt;span style=&quot;background-color: initial;&quot;&gt;.对 &lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;AJAX &lt;/font&gt;&lt;/b&gt;发出的跨域请求 &lt;font color=&quot;#ff3333&quot;&gt;&lt;b&gt;严厉限制&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1200" width="400" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="ji_XoPqnHpa4-nrGWLav-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="392" y="1840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="392" y="1637" />
+              <mxPoint x="392" y="1637" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-83" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.chrome;gradientColor=#DFDEDE" vertex="1" parent="1">
+          <mxGeometry x="343.4" y="1410" width="96.6" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-87" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.json;gradientColor=#DFDEDE" vertex="1" parent="1">
+          <mxGeometry x="483.4" y="760" width="56.6" height="62.4" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-88" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.json;gradientColor=#DFDEDE" vertex="1" parent="1">
+          <mxGeometry x="483.4" y="930" width="66.6" height="56.2" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="222" y="1840" as="targetPoint" />
+            <mxPoint x="222" y="1544" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="222" y="1600" />
+              <mxPoint x="222" y="1600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-91" value="JS" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1490" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-97" value="" style="curved=1;endArrow=none;html=1;rounded=0;endFill=0;" edge="1" parent="1" source="ji_XoPqnHpa4-nrGWLav-83" target="ji_XoPqnHpa4-nrGWLav-91">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="1530" as="sourcePoint" />
+            <mxPoint x="320" y="1480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="1530" />
+              <mxPoint x="270" y="1480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="ji_XoPqnHpa4-nrGWLav-101">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="1840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-101" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=default;fontSize=12;spacingTop=3;image=img/lib/ibm/applications/app_server.svg;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1454" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-103" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#33FF33;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="222" y="1570" as="sourcePoint" />
+            <mxPoint x="390" y="1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-104" value="XHR/fetch&lt;div&gt;跨域&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ji_XoPqnHpa4-nrGWLav-103">
+          <mxGeometry x="-0.1457" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-105" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#33FF33;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="1620" as="sourcePoint" />
+            <mxPoint x="580" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-106" value="请求发出" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ji_XoPqnHpa4-nrGWLav-105">
+          <mxGeometry x="-0.1511" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-107" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#33FF33;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="1670" as="sourcePoint" />
+            <mxPoint x="390" y="1690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-108" value="响应结果" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ji_XoPqnHpa4-nrGWLav-107">
+          <mxGeometry x="-0.0006" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-110" value="校验" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="1">
+          <mxGeometry x="363" y="1710" width="67" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-113" value="通过" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="343.4" y="1730" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-114" value="未通过" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="1">
+          <mxGeometry x="403.4" y="1730" width="57" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-115" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#33FF33;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="1740" as="sourcePoint" />
+            <mxPoint x="220" y="1770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-116" value="交付" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ji_XoPqnHpa4-nrGWLav-115">
+          <mxGeometry x="0.0765" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-117" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#FF3333;" edge="1" parent="1" source="ji_XoPqnHpa4-nrGWLav-114">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="1830" as="sourcePoint" />
+            <mxPoint x="220" y="1800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="1830" />
+              <mxPoint x="300" y="1830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-118" value="&lt;font color=&quot;#ff3333&quot;&gt;引发错误&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#ff3333&quot;&gt;跨域问题&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ji_XoPqnHpa4-nrGWLav-117">
+          <mxGeometry x="-0.0074" y="-6" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-120" value="&lt;font color=&quot;#ff3333&quot;&gt;对于AJAX的限制&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="310" y="1360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-121" value="&lt;p style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;何为同源？&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;源 =&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 14px; background-color: initial; text-align: center;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;协议&amp;nbsp; + 域名 + 端口&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="273.4" y="210" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-122" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;CORS &lt;font style=&quot;font-size: 21px; font-weight: normal;&quot;&gt;Cross-Origin Resource Sharing&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;CORS是一套机制，用于浏览器校验跨域请求&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;它的基本理念是：&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;只要&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#33ff33&quot;&gt;服务器&lt;/font&gt;明确表示&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#33ff33&quot;&gt;允许&lt;/font&gt;，则校验&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#33ff33&quot;&gt;通过&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;服务器&lt;/font&gt;明确&lt;font color=&quot;#ff3333&quot;&gt;拒绝&lt;/font&gt;或&lt;font color=&quot;#ff3333&quot;&gt;没有表示&lt;/font&gt;，则校验&lt;font color=&quot;#ff3333&quot;&gt;不通过&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="158.2" y="1970" width="410" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-123" value="&lt;font color=&quot;#ff3333&quot;&gt;CORS解决跨越问题&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="256.7" y="1930" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-124" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 22px;&quot;&gt;使用CORS方案的前提，必须服务器是 【自己人】&lt;/font&gt;" style="text;strokeColor=#006EAF;fillColor=#1ba1e2;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="126.7" y="2160" width="540" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ji_XoPqnHpa4-nrGWLav-126" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;CORS &lt;font style=&quot;font-size: 21px; font-weight: normal;&quot;&gt;Cross-Origin Resource Sharing&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;CORS将请求分为两类：&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;font color=&quot;#33ff33&quot;&gt;简单请求&lt;/font&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;font color=&quot;#000099&quot;&gt;预检请求&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;1、请求方法为：&lt;font color=&quot;#33ff33&quot;&gt;GET HEAD POST&lt;/font&gt;&lt;span style=&quot;color: rgb(51, 255, 51); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;color: rgb(51, 255, 51); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;非简单请求&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;2、头部字段满足CORS安全规范，详见&lt;font color=&quot;#99ccff&quot;&gt;W3C&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;3、请求头的Content-Type为&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font color=&quot;#33ff33&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;text/plain&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font color=&quot;#33ff33&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;multipart/form-data&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font color=&quot;#33ff33&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;application/x-www-form-urlencoded&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="158.2" y="2380" width="501.8" height="300" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
