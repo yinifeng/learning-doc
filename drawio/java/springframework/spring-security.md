@@ -1,51 +1,55 @@
 # 一、spring-security
 
-- `@EnableWebSecurity`启用spring-security自动配置
+## 1、`@EnableWebSecurity`
 
-  ```java
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  @Import({ WebSecurityConfiguration.class, SpringWebMvcImportSelector.class, OAuth2ImportSelector.class,
-  		HttpSecurityConfiguration.class })
-  @EnableGlobalAuthentication
-  @Configuration
-  public @interface EnableWebSecurity {
-  
-  	/**
-  	 * Controls debugging support for Spring Security. Default is false.
-  	 * @return if true, enables debug support with Spring Security
-  	 */
-  	boolean debug() default false;
-  
-  }
-  ```
+`@EnableWebSecurity`启用spring-security自动配置
 
-  1、`HttpSecurityConfiguration#httpSecurity`自动装配原型的`HttpSecurity`，用于构建`SecurityFilterChain`
+```java
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
+@Documented
+@Import({ WebSecurityConfiguration.class, SpringWebMvcImportSelector.class, OAuth2ImportSelector.class,
+		HttpSecurityConfiguration.class })
+@EnableGlobalAuthentication
+@Configuration
+public @interface EnableWebSecurity {
 
-  2、`WebSecurityConfiguration#setFilterChainProxySecurityConfigurer`先依赖注入构建`WebSecurity`
+	/**
+	 * Controls debugging support for Spring Security. Default is false.
+	 * @return if true, enables debug support with Spring Security
+	 */
+	boolean debug() default false;
 
-  3、`WebSecurityConfiguration`依赖查找配置`WebSecurityConfiguration#webSecurityConfigurers`
+}
+```
 
-  4、`WebSecurityConfiguration`依赖查找配置`WebSecurityConfiguration#securityFilterChains`
+* 1、`HttpSecurityConfiguration#httpSecurity`自动装配原型的`HttpSecurity`，用于构建`SecurityFilterChain`
 
-  5、`WebSecurityConfiguration`依赖查找配置`WebSecurityConfiguration#webSecurityCustomizers`，5.4的API对`WebSecurity`的扩展点
+* 2、`WebSecurityConfiguration#setFilterChainProxySecurityConfigurer`先依赖注入构建`WebSecurity`
 
-  6、`WebSecurityConfiguration#springSecurityFilterChain`自动装配`FilterChainProxy`,也就是`WebSecurity#build`
+* 3、`WebSecurityConfiguration`依赖查找配置`WebSecurityConfiguration#webSecurityConfigurers`
 
-  7、`@EnableGlobalAuthentication`注解会导入`AuthenticationConfiguration`认证配置类，这个主要是装配`AuthenticationManager`认证管理Bean
+* 4、`WebSecurityConfiguration`依赖查找配置`WebSecurityConfiguration#securityFilterChains`
 
-  
+* 5、`WebSecurityConfiguration`依赖查找配置`WebSecurityConfiguration#webSecurityCustomizers`，5.4的API对`WebSecurity`的扩展点
 
-- `HttpSecurity`用来构建`SecurityFilterChain`
+* 6、`WebSecurityConfiguration#springSecurityFilterChain`自动装配`FilterChainProxy`,也就是`WebSecurity#build`
 
-  类继承关系图：
+* 7、`@EnableGlobalAuthentication`注解会导入`AuthenticationConfiguration`认证配置类，这个主要是装配`AuthenticationManager`认证管理Bean
 
-  ![](.\images\HttpSecurity.png)
 
-  1、主要通过`SecurityBuilder#build`的抽象类控制只创建一个对象
 
-  2、`HttpSecurity#performBuild`方法构建`DefaultSecurityFilterChain`对象
+## 2、`HttpSecurity`
+
+`HttpSecurity`用来构建`SecurityFilterChain`
+
+类继承关系图：
+
+![](.\images\HttpSecurity.png)
+
+* 1、主要通过`SecurityBuilder#build`的抽象类控制只创建一个对象
+
+* 2、`HttpSecurity#performBuild`方法构建`DefaultSecurityFilterChain`对象
 
   ```java
   	@Override
@@ -67,17 +71,19 @@
 
   
 
-  
 
-- `WebSecurity`用来构建`Filter`主要是这个`FilterChainProxy`
 
-  类继承关系图：
+## 3、`WebSecurity`
 
-  ![](.\images\WebSecurity.png)
+`WebSecurity`用来构建`Filter`主要是这个`FilterChainProxy`
 
-  1、主要通过`SecurityBuilder#build`的抽象类控制只创建一个对象
+类继承关系图：
 
-  2、`WebSecurity#performBuild`方法构建`FilterChainProxy`
+![](.\images\WebSecurity.png)
+
+* 1、主要通过`SecurityBuilder#build`的抽象类控制只创建一个对象
+
+* 2、`WebSecurity#performBuild`方法构建`FilterChainProxy`
 
   ```java
   	@Override
@@ -133,12 +139,41 @@
 
   
 
-- spring-security执行流程
+## 4、SpringSecurity执行流程
 
-  1、`FilterChainProxy`入口`Filter`过滤器，执行方法`FilterChainProxy#doFilterInternal`
+* 1、`FilterChainProxy`入口`Filter`过滤器，执行方法`FilterChainProxy#doFilterInternal`
 
-  2、`FilterChainProxy#doFilterInternal`方法，通过`HttpServletRequest`从`SecurityFilterChain`数组中匹配第一个`SecurityFilterChain`
+* 2、`FilterChainProxy#doFilterInternal`方法，通过`HttpServletRequest`从`SecurityFilterChain`数组中匹配第一个`SecurityFilterChain`
 
-  3、匹配的`SecurityFilterChain`取出`Filter`数组，创建一个`VirtualFilterChain`链条对象，一个一个的执行匹配的`Filter`
+* 3、匹配的`SecurityFilterChain`取出`Filter`数组，创建一个`VirtualFilterChain`链条对象，一个一个的执行匹配的`Filter`
+
+## 5、HttpSecurity配置构建
+
+* 1、`AbstractConfiguredSecurityBuilder`配置类构建
+
+* 2、`SecurityConfigurer`安全框架配置接口抽象
+
+* 3、`HttpSecurity`http安全对象
+
+## 6、SpringSecurity认证
+
+* 1、认证核心接口`AuthenticationManager`，通过`AuthenticationManagerBuilder`来创建`AuthenticationManager`
+
+* 2、`AuthenticationManager`认证管理核心实现类`ProviderManager`
+
+* 3、`AuthenticationProvider`认证提供者，通过`ProviderManager`执行
+* 4、`Authentication`认证凭证对象（类似认证令牌，也就是现实中门禁卡）
+
+## 7、表单登录
+
+* 1、`UserDetailsService`
+
+* 2、`DaoAuthenticationProvider`使用`UserDetailsService`获取用户详情
+
+* 3、`AbstractUserDetailsAuthenticationProvider`
+
+* 4、`UsernamePasswordAuthenticationFilter`
+
+* 5、`FormLoginConfigurer`
 
   
