@@ -1,11 +1,214 @@
-<mxfile host="Electron" modified="2024-09-03T16:48:17.704Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="UBG25UV5x8nWoNAzuG2i" version="24.2.5" type="device">
-  <diagram name="第 1 页" id="nWO6EQk4l_IkxSJGdXeY">
-    <mxGraphModel dx="1434" dy="845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="Electron" modified="2024-09-04T08:49:02.075Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="lSNtjBWeXWZFeXAQSM3v" version="24.2.5" type="device" pages="5">
+  <diagram name="SpringSecurity执行流程" id="nWO6EQk4l_IkxSJGdXeY">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="QJA4s22keZLKg5IbjHdw-1" value="1、&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;HttpSecurity构建&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;SecurityFilterChain&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;2、&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;WebSecurity构建Filter&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
-          <mxGeometry x="190" y="180" width="400" height="170" as="geometry" />
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-53" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="679" width="240" height="429" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-52" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="53" width="240" height="429" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-36" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="310" width="240" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-1" target="b9w-bfoe7OU9WUuQYyNa-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-1" value="Client" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="120" y="204" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-2" target="b9w-bfoe7OU9WUuQYyNa-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-2" value="Filter(0)" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="120" y="344" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-4" target="b9w-bfoe7OU9WUuQYyNa-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-4" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="120" y="504" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-6" target="b9w-bfoe7OU9WUuQYyNa-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-6" value="FilterChainProxy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="140" y="549" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-7" value="DelegatingFilterProxy" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="514" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-8" target="b9w-bfoe7OU9WUuQYyNa-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-8" value="Filter(n)" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="120" y="734" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-10" value="Servelet" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="1">
+          <mxGeometry x="120" y="874" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-12" target="b9w-bfoe7OU9WUuQYyNa-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-12" target="b9w-bfoe7OU9WUuQYyNa-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-12" value="?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+          <mxGeometry x="374" y="539" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-14" target="b9w-bfoe7OU9WUuQYyNa-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-14" value="CsrfFilter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="560" y="90" width="160" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-15" target="b9w-bfoe7OU9WUuQYyNa-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-15" value="AuthenticationFilter" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="560" y="161" width="160" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-17" target="b9w-bfoe7OU9WUuQYyNa-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-17" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="560" y="234" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-19" target="b9w-bfoe7OU9WUuQYyNa-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-19" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="560" y="290" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-21" target="b9w-bfoe7OU9WUuQYyNa-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-21" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="560" y="350" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-23" value="AuthorizationFilter" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="560" y="410" width="160" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-26" target="b9w-bfoe7OU9WUuQYyNa-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-26" value="CsrfFilter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="560" y="734" width="160" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-28" target="b9w-bfoe7OU9WUuQYyNa-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-28" value="AuthenticationFilter" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="560" y="810" width="160" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-30" target="b9w-bfoe7OU9WUuQYyNa-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-30" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="560" y="878.5" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-32" target="b9w-bfoe7OU9WUuQYyNa-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-32" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="560" y="930" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9w-bfoe7OU9WUuQYyNa-34" target="b9w-bfoe7OU9WUuQYyNa-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-34" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="560" y="980" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-35" value="AuthorizationFilter" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1034" width="160" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-37" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="518" width="160" height="23.5" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-49" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="558.25" width="160" height="23.5" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-50" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="601.5" width="160" height="23.5" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-56" value="SecurityFilterChain(0)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="23" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-57" value="SecurityFilterChain(1)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="649" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-58" value="/api/**" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-59" value="/**" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="700" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b9w-bfoe7OU9WUuQYyNa-60" value="FilterChain" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="xiz9XN_VDtfIT-48D3it" name="处理SpringSecurity异常">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="I2RWd4T-0vuvRPuB3g_G-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://docs.spring.io/spring-security/reference/5.8/_images/servlet/architecture/exceptiontranslationfilter.png;" vertex="1" parent="1">
+          <mxGeometry x="60" y="260" width="698" height="610" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v6U0-0mS-dQYN_-3BWK2" name="SpringSecurity认证架构图">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oOvEXIfp5MHK-tdIb3VW-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://docs.spring.io/spring-security/reference/5.8/_images/servlet/authentication/architecture/abstractauthenticationprocessingfilter.png;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1246" width="786" height="714" as="geometry" />
+        </mxCell>
+        <mxCell id="oOvEXIfp5MHK-tdIb3VW-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://docs.spring.io/spring-security/reference/5.8/_images/servlet/authentication/architecture/securitycontextholder.png;" vertex="1" parent="1">
+          <mxGeometry x="130" y="100" width="486" height="179" as="geometry" />
+        </mxCell>
+        <mxCell id="oOvEXIfp5MHK-tdIb3VW-3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://docs.spring.io/spring-security/reference/5.8/_images/servlet/authentication/architecture/providermanager.png;" vertex="1" parent="1">
+          <mxGeometry x="40" y="350" width="728" height="354" as="geometry" />
+        </mxCell>
+        <mxCell id="oOvEXIfp5MHK-tdIb3VW-4" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://docs.spring.io/spring-security/reference/5.8/_images/servlet/authentication/architecture/providermanagers-parent.png;" vertex="1" parent="1">
+          <mxGeometry x="95" y="820" width="637" height="305" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="7F3yv_OTjN6z6P8JHRHk" name="Form登录流程">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8xVprAwy4SwaJHwEn_lh-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://docs.spring.io/spring-security/reference/5.8/_images/servlet/authentication/unpwd/loginurlauthenticationentrypoint.png;" vertex="1" parent="1">
+          <mxGeometry x="300" y="390" width="1115" height="495" as="geometry" />
+        </mxCell>
+        <mxCell id="8xVprAwy4SwaJHwEn_lh-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://docs.spring.io/spring-security/reference/5.8/_images/servlet/authentication/unpwd/usernamepasswordauthenticationfilter.png;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1260" width="771" height="702" as="geometry" />
+        </mxCell>
+        <mxCell id="8xVprAwy4SwaJHwEn_lh-3" value="登录重定向" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="417" y="220" width="410" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8xVprAwy4SwaJHwEn_lh-4" value="登录验证流程" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1090" width="410" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="1TyGY2r0O6vjzdkqogS-" name="SpringSecurity授权架构图">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dsewKExO4WpUBRp29ufO-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://docs.spring.io/spring-security/reference/5.8/_images/servlet/authorization/filtersecurityinterceptor.png;" vertex="1" parent="1">
+          <mxGeometry x="430" y="110" width="972" height="593" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
