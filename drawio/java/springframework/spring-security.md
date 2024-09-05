@@ -176,4 +176,8 @@ public @interface EnableWebSecurity {
 
 * 5、`FormLoginConfigurer`
 
-  
+* 6、`SecurityContextPersistenceFilter#repo`登录成功解析token（默认本地session存储）
+
+* 登录执行的filter示意图
+
+  ![](.\images\简单登录拦截链.png)
